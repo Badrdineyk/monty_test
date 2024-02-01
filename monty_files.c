@@ -4,7 +4,7 @@
  * f_open - Opens the file.
  * @name_f: Path of the file.
  */
-void f_open(char *name_f);
+void f_open(char *name_f)
 {
 	FILE *disc_file = fopen(name_f, "r");
 
@@ -19,7 +19,7 @@ void f_open(char *name_f);
  * f_read - Reads the file.
  * @disc_file: File discriptor
  */
-void f_read(FILE *disc_file);
+void f_read(FILE *disc_file)
 {
 	int ln, format = 0;
 	char *line_buff = NULL;

@@ -26,8 +26,8 @@ void stack_swap(stack_t **stack, unsigned int ln)
 	(*stack)->next = ptr->next;
 	if (ptr->next != NULL)
 		ptr->next->prev = *stack;
-	ptr->next = *stack
-		(*stack)->prev = ptr;
+	ptr->next = *stack;
+	(*stack)->prev = ptr;
 	ptr->prev = NULL;
 	*stack = ptr;
 }
